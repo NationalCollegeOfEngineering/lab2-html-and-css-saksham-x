@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+            height: 500px;
+            width: 500px;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 3.5px double black;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+        }
+        .head, .footer{
+            height: 10%;
+        }
+        .side{
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <h1>The required table is given below</h1>
+    <br><br>
+    <table border: 3px double black;>
+        <tr><th colspan="2" class="head"><div>Headline </div></th></tr>
+        <tr><td class="side"><div>Side</div></td><td class="body"><div>Body</div></td></tr>
+        <tr><td colspan="2" class="footer"><div>Footer</div></td></tr>
+    </table>
+</body>
+</html>
